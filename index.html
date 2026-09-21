@@ -146,6 +146,24 @@
     .footer-inner{justify-content:center;text-align:center;}
   }
 </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2073440366611331');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=2073440366611331&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -343,7 +361,7 @@
 <div id="contacto" class="container cta-final">
   <h2>Deja de perder... y empieza a ganar con inteligencia.</h2>
   <p>Cuando la información se sirve a tiempo, todo el negocio mejora. Cuéntanos sobre tu restaurante y te mostramos cómo se vería tu primera predicción.</p>
-  <a href="https://wa.me/573337248489?text=Hola%2C%20quiero%20probar%20FlashBite%20gratis" class="btn btn-primary" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+  <a href="https://wa.me/573337248489?text=Hola%2C%20quiero%20probar%20FlashBite%20gratis" class="btn btn-primary" target="_blank" rel="noopener" onclick="if(window.fbq){fbq('track','Contact');}">Escríbenos por WhatsApp</a>
   <span class="cta-note">+57 333 724 8489 · Cali, Colombia</span>
 </div>
 
